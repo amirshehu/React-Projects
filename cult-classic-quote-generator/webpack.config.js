@@ -18,11 +18,8 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                use: [{
-                    loader: 'style-loader',
-                    loader: 'css-loader'
-                }],
-                test: /\.css$/i
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+                test: /\.scss$/i
             }]
     },
     devtool: 'eval-cheap-module-source-map',

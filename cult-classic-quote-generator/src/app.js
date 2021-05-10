@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import QuotesApp from './components/quotes';
-import '../src/styles/styles.css';
+import './styles/styles.scss';
 
 // import styles from 'style-loader'
 // import css from 'css-loader'
@@ -16,4 +16,4 @@ import '../src/styles/styles.css';
 //     )
 // }
 
-ReactDOM.render(<QuotesApp />, document.getElementById("Qoutes"))
+ReactDOM.render(<QuotesApp />, document.getElementById("Quotes"))
