@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Header = () => {
-    return <div>
-        <h1>Cult Classic Quotes Game</h1>
+    return <div className = 'header'>
+        <h1 className = 'header_title'>Cult Classic Quotes Game</h1>
     </div>
 }
 

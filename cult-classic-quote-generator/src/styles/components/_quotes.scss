@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+
+  padding-bottom: 3rem;
+}
+
+#quote {
+  text-align: center;
+  color: white;
+  padding-top: 3rem;
+  font-size: 2vh;
+}
+
+#movie {
+  color: white;
+  background-color: #81965e;
+  border-radius: 5px;
+  padding: 1rem;
+
+  font-style: italic;
+  animation: zoomIn 4s;
+  animation-iteration-count: 1;
+}
+#movie:empty {
+  padding: 0rem;
+}

@@ -1,9 +1,5 @@
-$body-color: green;
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat");
-
-* {
-  color: $body-color;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-}
+@import "./base/settings";
+@import "./base/base";
+@import "./components/header";
+@import "./components/quotes";
+@import "./components/controls";

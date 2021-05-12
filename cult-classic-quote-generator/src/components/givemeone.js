@@ -20,19 +20,33 @@ export const GiveMeOne = (props) => {
 
     return (
         <div>
-            {props.cultQuote}
+            <div className='content'>
+            <p id='quote'> {props.cultQuote}</p>
             <br></br>
-            <br></br>
-            {props.visibility && (props.cultMovie)}
+                <br></br>
 
+                {/* the line below allows us to use repeatable animations in css,
+                by rendering element and assigning the id everytime the elemnt is clicked */}
+
+                {props.visibility && <p id='movie'>{props.cultMovie}</p>}
+
+                {/* in comparision the line below does not allow for this, that is because the div and the paragraph
+                is already rendered and has an id. As opposed to rendering it when a true - true condition (&&) is met   */}
+
+                {/* <p id='movie' >{props.visibility && (props.cultMovie)}</p> */}
+             
+             
+            </div>
             <br></br>
-            <button onClick={(props.pickOne)}>
+            <div className='controls'>
+            <button className='controls_btn' id='pickOneBtn' onClick={(props.pickOne)}>
                 Do ya feel lucky? well do ya?!
             </button>
-            <button onClick={props.hideAnswer}>{props.visibility ? 'Hide Movie' : 'Reveal Movie'} </button>
+            <button className='controls_btn' id='revealMovieBtn' onClick={props.hideAnswer}>{props.visibility ? 'Hide Movie' : 'Reveal Movie'} </button>
 
             <br></br>
-            <button onClick={(props.clearAll)}>So you dont feel lucky?</button>
+                <button className='controls_btn' id='clearAllBtn' onClick={(props.clearAll)}>So you dont feel lucky?</button>
+            </div>
         </div>
     );
 };

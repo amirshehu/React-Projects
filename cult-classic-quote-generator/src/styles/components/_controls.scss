@@ -1,0 +1,27 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  .controls_btn {
+    font-size: $control-btn;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: none;
+  }
+}
+#pickOneBtn {
+  background-color: #62223c;
+  color: white;
+}
+#revealMovieBtn {
+  background-color: #424f3c;
+  color: white;
+}
+#clearAllBtn {
+  background-color: #5685bd;
+  color: white;
+}
